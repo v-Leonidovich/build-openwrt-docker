@@ -1,4 +1,4 @@
-Скрипт для сборки OpenWrt вместе с Podkop, AWG и метриками prometheus.
+Скрипт для сборки OpenWrt вместе с Podkop, AWG.
 
 Для запуска клонировать репозиторий, собрать контейнер с зависимостями
 <code>docker compose build</code>
