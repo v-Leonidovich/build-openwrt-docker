@@ -7,7 +7,6 @@ PODKOPR=r1
 # AmneziaWG
 AWG=24.10.3
 R3S=aarch64_generic_rockchip_armv8
-AX6S=aarch64_cortex-a53_mediatek_mt7622
 # ----------------------------------------------------------------------------------------
 # NanoPi R3S
 # ----------------------------------------------------------------------------------------
@@ -51,9 +50,7 @@ chmod -R 777 files
 
 # Building
 make image PROFILE=friendlyarm_nanopi-r3s PACKAGES="-ip6tables -kmod-ip6tables -kmod-nf-conntrack6 -kmod-nf-ipt6 -odhcp6c -odhcpd -kmod-ipv6 \
-luci luci-i18n-base-ru nano kmod-mtd-rw haproxy wireguard-tools kmod-wireguard luci-proto-wireguard qrencode \
-prometheus-node-exporter-lua prometheus-node-exporter-lua-nat_traffic prometheus-node-exporter-lua-netstat \
-prometheus-node-exporter-lua-openwrt prometheus-node-exporter-lua-wifi prometheus-node-exporter-lua-wifi_stations \
+luci luci-i18n-base-ru nano kmod-mtd-rw wireguard-tools kmod-wireguard luci-proto-wireguard qrencode \
 podkop luci-app-podkop luci-i18n-podkop-ru banip luci-app-banip kmod-bonding \
 amneziawg-tools kmod-amneziawg luci-proto-amneziawg luci-i18n-amneziawg-ru \
 openvpn kmod-ovpn-dco-v2 kmod-tun zlib liblzo luci-app-openvpn" #FILES=files/
