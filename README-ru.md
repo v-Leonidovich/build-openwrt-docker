@@ -4,7 +4,7 @@
 <code>docker compose build</code>
 
 Далее запустить сборку 
-<code>docker compose up</code> (или up -)
+<code>docker compose up</code> (или up -d)
 
 Файлы прошивок появятся в директории release
 
