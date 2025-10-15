@@ -1,0 +1,11 @@
+---
+services:
+  openwrt-builder:
+    build: .
+    container_name: openwrt-builder
+    volumes:
+      - ./config:/home/ubuntu/config
+      - ./release:/home/ubuntu/release
+      - ./tmp:/home/ubuntu/tmp
+    tty: true
+    stdin_open: true
