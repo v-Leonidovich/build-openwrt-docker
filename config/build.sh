@@ -1,6 +1,7 @@
 #!/bin/bash
 RELEASE=$(date +"%Y-%m-%d")
 OPENWRT=24.10.3
+PROFILE=friendlyarm_nanopi-r3s
 # Podkop
 PODKOP=0.6.2
 PODKOPR=r1
@@ -49,7 +50,7 @@ cp $HOME/config/r3s/* files/
 chmod -R 777 files
 
 # Building
-make image PROFILE=friendlyarm_nanopi-r3s PACKAGES="-ip6tables -kmod-ip6tables -kmod-nf-conntrack6 -kmod-nf-ipt6 -odhcp6c -odhcpd -kmod-ipv6 \
+make image PROFILE="$PROFILE" PACKAGES="-ip6tables -kmod-ip6tables -kmod-nf-conntrack6 -kmod-nf-ipt6 -odhcp6c -odhcpd -kmod-ipv6 \
 luci luci-i18n-base-ru nano kmod-mtd-rw wireguard-tools kmod-wireguard luci-proto-wireguard qrencode \
 podkop luci-app-podkop luci-i18n-podkop-ru banip luci-app-banip kmod-bonding \
 amneziawg-tools kmod-amneziawg luci-proto-amneziawg luci-i18n-amneziawg-ru \
