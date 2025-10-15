@@ -1,5 +1,4 @@
 FROM ubuntu:24.04
-#FROM debian:trixie
 
 RUN apt-get update && apt-get install -y --no-install-recommends libncurses5-dev \
     build-essential file libncurses-dev zlib1g-dev gawk git libncursesw5-dev tar xz-utils \
